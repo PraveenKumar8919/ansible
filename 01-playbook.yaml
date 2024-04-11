@@ -1,0 +1,4 @@
+- name: sample playbook
+  task: ping host
+    host: goolgle
+    
