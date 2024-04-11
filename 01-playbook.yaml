@@ -1,4 +1,5 @@
-- name: sample playbook
-  task: ping host
-    host: goolgle
-    
+- name: ping playbook
+  hosts: 
+  task: 
+  - name: ping the server
+    ansinle.ping.server:
