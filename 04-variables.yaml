@@ -1,0 +1,14 @@
+# Learning Variables
+
+- name: varibles
+  hosts: localhost
+  vars:
+    Age: "25"
+    Name: "PraveenKumar"
+    Course: "DevOps Course"
+  tasks:
+  - name: check variables
+    vars: #varibles under task level
+      Course: "Ansible varibles"
+    ansible.builtin.debug:
+      msg: "Hi, I am {{Name}}, with age {{Age}}, learning {{Course}}"
