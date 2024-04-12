@@ -1,7 +1,7 @@
 #writing multiple plays in one yaml file
 - name: Play-1
   hosts: localhost
-  tests: 
+  tasks: 
   - name: play-1 and testing
     ansible.builtin.debug:
       msg: "Hello this is play-1"
