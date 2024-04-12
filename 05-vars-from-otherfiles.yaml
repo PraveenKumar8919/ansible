@@ -1,0 +1,12 @@
+# Learning Variables
+
+- name: Learning varibles in yaml
+  hosts: localhost
+  vars_files:
+  - varibles.yaml
+  tasks:
+  - name: check variables
+    vars: #varibles under task level
+      Course: "Ansible varibles"
+    ansible.builtin.debug:
+      msg: "Hi, I am {{Name}}, with age {{Age}}, learning {{Course}}"
