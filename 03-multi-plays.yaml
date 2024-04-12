@@ -9,7 +9,7 @@
 
 - name: Play-2
   hosts: localhost
-  tests: 
+  tasks: 
   - name: play-2 and testing
     ansible.builtin.debug:
       msg: "Hello this is play-2"
